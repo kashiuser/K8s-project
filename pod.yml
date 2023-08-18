@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: django-todo-app
+  namespace: django-todo
+spec:
+  containers:
+    - name: django-ctr
+      image: dockerkashi/react-django-app:latest
+      ports:
+        - containerPort: 8001
+
